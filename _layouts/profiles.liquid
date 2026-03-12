@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 <div class="post members-page">
   <article>
@@ -16,9 +16,9 @@ layout: page
             <h2>{{ section.title }}</h2>
           </div>
 
-          <div class="members-grid">
+          <div class="members-grid{% if section.compact %} members-grid-compact{% endif %}">
             {% for member in section.members %}
-              <article class="member-card{% if member.featured %} member-card-featured{% endif %}">
+              <article class="member-card{% if member.featured %} member-card-featured{% endif %}{% if section.compact %} member-card-compact{% endif %}">
                 <div class="member-card-media">
                   {% if member.image %}
                     {% assign member_image_path = member.image | prepend: 'assets/img/' %}
@@ -41,55 +41,77 @@ layout: page
                     {% endif %}
                   </div>
 
-                  {% if member.education %}
-                    <div class="member-detail-block">
-                      <h4>Education</h4>
-                      <ul>
-                        {% for item in member.education %}
-                          <li>{{ item }}</li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  {% endif %}
-
-                  {% if member.research_areas %}
-                    <div class="member-detail-block">
-                      <h4>Research Areas</h4>
-                      <ul class="member-tags">
-                        {% for item in member.research_areas %}
-                          <li>{{ item }}</li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  {% endif %}
-
-                  {% if member.contact or member.email or member.phone or member.office or member.website %}
-                    <div class="member-detail-block">
-                      <h4>Contact</h4>
-                      <ul class="member-contact-list">
+                  {% if section.compact %}
+                    {% if member.education %}
+                      <p class="member-meta"><strong>Education</strong> {{ member.education | join: ', ' }}</p>
+                    {% endif %}
+                    {% if member.research_areas %}
+                      <p class="member-meta"><strong>Research</strong> {{ member.research_areas | join: ', ' }}</p>
+                    {% endif %}
+                    {% if member.email or member.phone or member.office %}
+                      <p class="member-meta">
                         {% if member.email %}
-                          <li><strong>Email</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
+                          <span><strong>Email</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></span>
                         {% endif %}
                         {% if member.phone %}
-                          <li><strong>Phone</strong> {{ member.phone }}</li>
+                          <span><strong>Phone</strong> {{ member.phone }}</span>
                         {% endif %}
                         {% if member.office %}
-                          <li><strong>Office</strong> {{ member.office }}</li>
+                          <span><strong>Office</strong> {{ member.office }}</span>
                         {% endif %}
-                        {% if member.website %}
-                          <li><strong>Website</strong> <a href="{{ member.website }}">{{ member.website }}</a></li>
-                        {% endif %}
-                        {% if member.contact %}
-                          {% for item in member.contact %}
+                      </p>
+                    {% endif %}
+                  {% else %}
+                    {% if member.education %}
+                      <div class="member-detail-block">
+                        <h4>Education</h4>
+                        <ul>
+                          {% for item in member.education %}
                             <li>{{ item }}</li>
                           {% endfor %}
-                        {% endif %}
-                      </ul>
-                    </div>
-                  {% endif %}
+                        </ul>
+                      </div>
+                    {% endif %}
 
-                  {% if member.bio %}
-                    <div class="member-bio">{{ member.bio | markdownify }}</div>
+                    {% if member.research_areas %}
+                      <div class="member-detail-block">
+                        <h4>Research Areas</h4>
+                        <ul class="member-tags">
+                          {% for item in member.research_areas %}
+                            <li>{{ item }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    {% endif %}
+
+                    {% if member.contact or member.email or member.phone or member.office or member.website %}
+                      <div class="member-detail-block">
+                        <h4>Contact</h4>
+                        <ul class="member-contact-list">
+                          {% if member.email %}
+                            <li><strong>Email</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
+                          {% endif %}
+                          {% if member.phone %}
+                            <li><strong>Phone</strong> {{ member.phone }}</li>
+                          {% endif %}
+                          {% if member.office %}
+                            <li><strong>Office</strong> {{ member.office }}</li>
+                          {% endif %}
+                          {% if member.website %}
+                            <li><strong>Website</strong> <a href="{{ member.website }}">{{ member.website }}</a></li>
+                          {% endif %}
+                          {% if member.contact %}
+                            {% for item in member.contact %}
+                              <li>{{ item }}</li>
+                            {% endfor %}
+                          {% endif %}
+                        </ul>
+                      </div>
+                    {% endif %}
+
+                    {% if member.bio %}
+                      <div class="member-bio">{{ member.bio | markdownify }}</div>
+                    {% endif %}
                   {% endif %}
                 </div>
               </article>
