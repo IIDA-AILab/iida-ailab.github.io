@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: IIDA # the website title (if blank, full name will be used instead)
 first_name: Min-Cheol
 last_name: Sagong
 contact_note: >
@@ -154,7 +154,7 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
@@ -278,8 +278,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Min-Cheol]
+  first_name: [Sagong]
 
   style: apa
   locale: en
