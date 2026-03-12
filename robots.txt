@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://iida-lab.github.io/sitemap.xml
+Sitemap: https://iida-ailab.github.io/sitemap.xml
