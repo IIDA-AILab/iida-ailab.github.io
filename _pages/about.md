@@ -4,6 +4,8 @@ title: IIDA
 permalink: /
 subtitle: Integrated Intelligence & Data Analytics
 
+top_banner: assets/img/lab-banner.png
+
 profile:
   align: right
   image: prof_pic.jpg
@@ -11,7 +13,7 @@ profile:
   more_info: >
     <p>Min-Cheol Sagong</p>
     <p>033-250-7674</p>
-    <p>Kanwon Univ.</p>
+    <p>Assistant Prof. in Kanwon Univ.</p>
     <p>1, Kangwondaehak-gil, Chuncheon-si</p>
     <p>Gangwon-do, Republic of Korea</p>
 

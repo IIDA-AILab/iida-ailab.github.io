@@ -3,6 +3,14 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
+    {% if page.top_banner %}
+    {% include figure.liquid
+      path=page.top_banner
+      alt="Lab banner"
+      class="img-fluid rounded mb-4"
+      loading="eager"
+    %}
+  {% endif %}
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
