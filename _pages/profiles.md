@@ -30,7 +30,7 @@ member_sections:
   - title: Graduate Students
     compact: true
     members:
-      - image: prof_pic.jpg
+      - image: blank.webp
         image_circular: true
         name: Student Name
         role: M.S. Student
@@ -43,7 +43,7 @@ member_sections:
         website: https://example.com/
         github: https://github.com/
         
-      - image: prof_pic.jpg
+      - image: blank.webp
         image_circular: true
         name: Student Name
         role: M.S. Student
@@ -58,7 +58,7 @@ member_sections:
   - title: Undergraduate Students
     compact: true
     members:
-      - image: prof_pic.jpg
+      - image: blank.webp
         image_circular: true
         name: Student Name
         role: Undergraduate Researcher
@@ -73,7 +73,7 @@ member_sections:
   - title: Alumni
     compact: true
     members:
-      - image: prof_pic.jpg
+      - image: blank.webp
         image_circular: true
         name: Alumni Name
         role: Former M.S. Student
