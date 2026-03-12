@@ -15,7 +15,10 @@ layout: default
             <h2>{{ section.title }}</h2>
           </div>
 
-          <div class="members-grid{% if section.compact %} members-grid-compact{% endif %}">
+          <div
+            class="members-grid{% if section.compact %} members-grid-compact{% endif %}"
+            style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1.25rem;"
+          >
             {% for member in section.members %}
               <article class="member-card{% if member.featured %} member-card-featured{% endif %}{% if section.compact %} member-card-compact{% endif %}">
                 <div class="member-card-media">
