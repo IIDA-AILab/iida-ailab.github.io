@@ -53,9 +53,9 @@ layout: default
                     {% endif %}
 
                     {% if member.research_areas %}
-                      <div class="member-text-list">
+                      <div class="member-tag-list">
                         {% for item in member.research_areas %}
-                          <p>{{ item }}</p>
+                          <span>{{ item }}</span>
                         {% endfor %}
                       </div>
                     {% endif %}
@@ -93,11 +93,11 @@ layout: default
                     {% if member.research_areas %}
                       <div class="member-detail-block">
                         <h4>Research Areas</h4>
-                        <ul>
+                        <div class="member-tag-list">
                           {% for item in member.research_areas %}
-                            <li>{{ item }}</li>
+                            <span>{{ item }}</span>
                           {% endfor %}
-                        </ul>
+                        </div>
                       </div>
                     {% endif %}
 
