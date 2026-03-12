@@ -42,7 +42,6 @@ member_sections:
         email: student@example.com
         website: https://example.com/
         github: https://github.com/
-        office: AI Lab
         
       - image: prof_pic.jpg
         image_circular: true
@@ -55,7 +54,6 @@ member_sections:
           - Multimodal Learning
         email: student@example.com
         github: https://github.com/
-        office: AI Lab
 
   - title: Undergraduate Students
     compact: true
@@ -71,7 +69,6 @@ member_sections:
           - Data Analytics
         email: student@example.com
         github: https://github.com/
-        office: AI Lab
 
   - title: Alumni
     compact: true
@@ -80,11 +77,9 @@ member_sections:
         image_circular: true
         name: Alumni Name
         role: Former M.S. Student
-        education:
-          - M.S. in Computer Science, Kangwon National University
         research_areas:
           - Computer Vision
         email: alumni@example.com
         website: https://example.com/
-        office: Current Affiliation
+        current_affiliation: Current Affiliation
 ---
