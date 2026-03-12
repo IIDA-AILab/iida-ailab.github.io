@@ -44,6 +44,159 @@ body.sticky-bottom-footer {
   margin-bottom: 1rem;
 }
 
+.members-page {
+  .members-intro {
+    margin-bottom: 2rem;
+  }
+
+  .members-section {
+    margin-bottom: 3rem;
+  }
+
+  .members-section-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .members-section-kicker {
+    margin-bottom: 0.35rem;
+    color: var(--global-theme-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .members-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .member-card {
+    display: grid;
+    grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.5rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 1.25rem;
+    background: color-mix(in srgb, var(--global-bg-color) 92%, var(--global-theme-color) 8%);
+  }
+
+  .member-card-featured {
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  }
+
+  .member-card-media figure {
+    margin: 0;
+  }
+
+  .member-card-media img,
+  .member-card-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .member-card-placeholder {
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--global-theme-color) 15%, var(--global-bg-color) 85%);
+    color: var(--global-theme-color);
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .member-card-heading {
+    margin-bottom: 1rem;
+
+    h3 {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  .member-role {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+    font-weight: 500;
+  }
+
+  .member-detail-block {
+    margin-bottom: 1rem;
+
+    h4 {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+  }
+
+  .member-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-top: 0;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--global-theme-color) 12%, var(--global-bg-color) 88%);
+      color: var(--global-text-color);
+      font-size: 0.92rem;
+    }
+  }
+
+  .member-contact-list {
+    padding-left: 0;
+    list-style: none;
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    strong {
+      display: inline-block;
+      min-width: 4.5rem;
+      margin-right: 0.25rem;
+    }
+  }
+
+  .member-bio {
+    color: var(--global-text-color-light);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .members-page {
+    .member-card,
+    .member-card-featured {
+      grid-template-columns: 1fr;
+      padding: 1.1rem;
+    }
+
+    .member-card-media img,
+    .member-card-placeholder {
+      max-width: 280px;
+    }
+  }
+}
+
 // Content layout uses Bootstrap's grid system with responsive columns
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples

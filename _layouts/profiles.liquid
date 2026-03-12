@@ -1,35 +1,101 @@
 ---
 layout: page
 ---
-<div class="post">
+<div class="post members-page">
   <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
+    {% if content and content != '' %}
+      <div class="members-intro">{{ content }}</div>
+    {% endif %}
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
+    {% if page.member_sections %}
+      {% for section in page.member_sections %}
+        {% assign section_slug = section.title | slugify %}
+        <section class="members-section" id="{{ section_slug }}">
+          <div class="members-section-header">
+            <p class="members-section-kicker">Members</p>
+            <h2>{{ section.title }}</h2>
+          </div>
+
+          <div class="members-grid">
+            {% for member in section.members %}
+              <article class="member-card{% if member.featured %} member-card-featured{% endif %}">
+                <div class="member-card-media">
+                  {% if member.image %}
+                    {% assign member_image_path = member.image | prepend: 'assets/img/' %}
+                    {% if member.image_circular == false %}
+                      {% assign member_image_class = 'img-fluid z-depth-1 rounded' %}
+                    {% else %}
+                      {% assign member_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                    {% endif %}
+                    {% include figure.liquid loading="eager" path=member_image_path class=member_image_class sizes="(min-width: 768px) 280px, 90vw" alt=member.name %}
+                  {% else %}
+                    <div class="member-card-placeholder">{{ member.name | slice: 0 }}</div>
+                  {% endif %}
+                </div>
+
+                <div class="member-card-body">
+                  <div class="member-card-heading">
+                    <h3>{{ member.name }}</h3>
+                    {% if member.role %}
+                      <p class="member-role">{{ member.role }}</p>
+                    {% endif %}
+                  </div>
+
+                  {% if member.education %}
+                    <div class="member-detail-block">
+                      <h4>Education</h4>
+                      <ul>
+                        {% for item in member.education %}
+                          <li>{{ item }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  {% if member.research_areas %}
+                    <div class="member-detail-block">
+                      <h4>Research Areas</h4>
+                      <ul class="member-tags">
+                        {% for item in member.research_areas %}
+                          <li>{{ item }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  {% if member.contact or member.email or member.phone or member.office or member.website %}
+                    <div class="member-detail-block">
+                      <h4>Contact</h4>
+                      <ul class="member-contact-list">
+                        {% if member.email %}
+                          <li><strong>Email</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
+                        {% endif %}
+                        {% if member.phone %}
+                          <li><strong>Phone</strong> {{ member.phone }}</li>
+                        {% endif %}
+                        {% if member.office %}
+                          <li><strong>Office</strong> {{ member.office }}</li>
+                        {% endif %}
+                        {% if member.website %}
+                          <li><strong>Website</strong> <a href="{{ member.website }}">{{ member.website }}</a></li>
+                        {% endif %}
+                        {% if member.contact %}
+                          {% for item in member.contact %}
+                            <li>{{ item }}</li>
+                          {% endfor %}
+                        {% endif %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  {% if member.bio %}
+                    <div class="member-bio">{{ member.bio | markdownify }}</div>
+                  {% endif %}
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </section>
       {% endfor %}
     {% endif %}
   </article>

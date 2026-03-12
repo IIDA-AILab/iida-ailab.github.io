@@ -6,25 +6,51 @@ description: members of the lab
 nav: true
 nav_order: 7
 
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Min-Cheol Sagong</p>
-      <p>033-250-7674</p>
-      <p>Assistant Prof. in Kanwon Univ.</p>
-      <p>1, Kangwondaehak-gil, Chuncheon-si</p>
-      <p>Gangwon-do, Republic of Korea</p>
-  - align: left
-    image: prof_pic.jpg
-    # content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+member_sections:
+  - title: Advisor
+    members:
+      - featured: true
+        image: prof_pic.jpg
+        image_circular: false
+        name: Min-Cheol Sagong
+        role: Assistant Professor, Kangwon National University
+        education:
+          - Ph.D. in Electrical and Electronics Engineering, Korea University
+        research_areas:
+          - Computer Vision
+          - Image Processing
+          - Deep Learning
+        email: ""
+        phone: 033-250-7674
+        office: 1, Kangwondaehak-gil, Chuncheon-si, Gangwon-do, Republic of Korea
+        bio: |
+          Advisor profile summary can be written here in Markdown.
+
+  - title: Graduate Students
+    members:
+      - image: prof_pic.jpg
+        image_circular: false
+        name: Student Name
+        role: M.S. Student
+        education:
+          - B.S. in Computer Science, Example University
+        research_areas:
+          - Computer Vision
+          - Multimodal Learning
+        email: student@example.com
+        office: AI Lab
+
+  - title: Undergraduate Students
+    members:
+      - image: prof_pic.jpg
+        image_circular: false
+        name: Student Name
+        role: Undergraduate Researcher
+        education:
+          - B.S. Candidate in Computer Science, Kangwon National University
+        research_areas:
+          - Vision-Language Models
+          - Data Analytics
+        email: student@example.com
+        office: AI Lab
 ---
