@@ -40,6 +40,8 @@ member_sections:
           - Computer Vision
           - Multimodal Learning
         email: student@example.com
+        website: https://example.com/
+        github: https://github.com/
         office: AI Lab
         
       - image: prof_pic.jpg
@@ -52,6 +54,7 @@ member_sections:
           - Computer Vision
           - Multimodal Learning
         email: student@example.com
+        github: https://github.com/
         office: AI Lab
 
   - title: Undergraduate Students
@@ -67,6 +70,7 @@ member_sections:
           - Vision-Language Models
           - Data Analytics
         email: student@example.com
+        github: https://github.com/
         office: AI Lab
 
   - title: Alumni
@@ -81,5 +85,6 @@ member_sections:
         research_areas:
           - Computer Vision
         email: alumni@example.com
+        website: https://example.com/
         office: Current Affiliation
 ---
