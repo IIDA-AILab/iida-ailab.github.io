@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - IIDA-AILab/RORD
   - IIDA-AILab/AIhub_occ
   - IIDA-AILab/PEPSI-Fast_image_inpainting_with_parallel_decoding_network
   - kim1102/VIGFace

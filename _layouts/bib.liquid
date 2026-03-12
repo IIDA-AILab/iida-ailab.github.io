@@ -25,7 +25,17 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
-      {% if entry.preview %}
+      {% if entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          {% assign entry_pdf_path = entry.pdf %}
+        {% else %}
+          {% assign entry_pdf_path = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
+        {% endif %}
+        <div class="preview preview-pdf z-depth-1 rounded" data-pdf-preview="{{ entry_pdf_path }}">
+          <canvas class="preview-pdf-canvas"></canvas>
+          <a href="{{ entry_pdf_path }}" class="preview preview-pdf-fallback rounded">PDF</a>
+        </div>
+      {% elsif entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
