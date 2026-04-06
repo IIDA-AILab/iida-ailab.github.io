@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-23'
+  last_updated: '2026-04-06'
 papers:
   pEx-E2wAAAAJ:IjCSPb-OGe4C:
     citations: 6
     title: Simple yet effective way for improving the performance of depth map super-resolution
     year: '2020'
   pEx-E2wAAAAJ:LkGwnXOMwfcC:
-    citations: 1
+    citations: 2
     title: Channel-wise Noise Scheduled Diffusion for Inverse Rendering in Indoor Scenes
     year: '2025'
   pEx-E2wAAAAJ:Tyk-4Ss8FVUC:
@@ -18,7 +18,7 @@ papers:
     title: Simple yet effective way for improving the performance of lossy image compression
     year: '2020'
   pEx-E2wAAAAJ:W7OEmFMy1HYC:
-    citations: 15
+    citations: 16
     title: Conditional convolution projecting latent vectors on condition-specific space
     year: '2022'
   pEx-E2wAAAAJ:Y0pCki6q_DkC:
@@ -26,7 +26,7 @@ papers:
     title: Image generation with self pixel-wise normalization
     year: '2023'
   pEx-E2wAAAAJ:YsMSGLbcyi4C:
-    citations: 26
+    citations: 27
     title: 'RORD: A Real-world Object Removal Dataset.'
     year: '2022'
   pEx-E2wAAAAJ:d1gkVwhDpl0C:
