@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-06'
+  last_updated: '2026-05-15'
 papers:
   pEx-E2wAAAAJ:IjCSPb-OGe4C:
     citations: 6
@@ -38,7 +38,7 @@ papers:
     title: Semantic and Instance-Aware Pixel-Adaptive Convolution for Panoptic Segmentation
     year: '2023'
   pEx-E2wAAAAJ:qjMakFHDy7sC:
-    citations: 28
+    citations: 29
     title: Deep fashion recommendation system with style feature decomposition
     year: '2019'
   pEx-E2wAAAAJ:roLk4NBRz8UC:
@@ -46,7 +46,7 @@ papers:
     title: 'VIGFace: Virtual Identity Generation for Privacy-Free Face Recognition Dataset'
     year: '2025'
   pEx-E2wAAAAJ:u-x6o8ySG0sC:
-    citations: 151
+    citations: 152
     title: 'Pepsi++: Fast and lightweight network for image inpainting'
     year: '2020'
   pEx-E2wAAAAJ:u5HHmVD_uO8C:
@@ -54,7 +54,7 @@ papers:
     title: Adversarial context aggregation network for low-light image enhancement
     year: '2018'
   pEx-E2wAAAAJ:ufrVoPGSRksC:
-    citations: 8
+    citations: 9
     title: Multi-view pedestrian occupancy prediction with a novel synthetic dataset
     year: '2025'
   pEx-E2wAAAAJ:zYLM7Y9cAGgC:
