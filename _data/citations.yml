@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-24'
+  last_updated: '2026-07-06'
 papers:
   pEx-E2wAAAAJ:IjCSPb-OGe4C:
     citations: 6
@@ -30,7 +30,7 @@ papers:
     title: 'RORD: A Real-world Object Removal Dataset.'
     year: '2022'
   pEx-E2wAAAAJ:d1gkVwhDpl0C:
-    citations: 192
+    citations: 193
     title: 'Pepsi: Fast image inpainting with parallel decoding network'
     year: '2019'
   pEx-E2wAAAAJ:eQOLeE2rZwMC:
@@ -46,7 +46,7 @@ papers:
     title: 'VIGFace: Virtual Identity Generation for Privacy-Free Face Recognition Dataset'
     year: '2025'
   pEx-E2wAAAAJ:u-x6o8ySG0sC:
-    citations: 153
+    citations: 154
     title: 'Pepsi++: Fast and lightweight network for image inpainting'
     year: '2020'
   pEx-E2wAAAAJ:u5HHmVD_uO8C:
