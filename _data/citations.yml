@@ -1,13 +1,13 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-08-14'
 papers:
   pEx-E2wAAAAJ:IjCSPb-OGe4C:
-    citations: 6
+    citations: 7
     title: Simple yet effective way for improving the performance of depth map super-resolution
     year: '2020'
   pEx-E2wAAAAJ:LkGwnXOMwfcC:
-    citations: 3
-    title: Channel-wise Noise Scheduled Diffusion for Inverse Rendering in Indoor Scenes
+    citations: 4
+    title: Channel-wise noise scheduled diffusion for inverse rendering in indoor scenes
     year: '2025'
   pEx-E2wAAAAJ:Tyk-4Ss8FVUC:
     citations: 0
@@ -22,15 +22,15 @@ papers:
     title: Conditional convolution projecting latent vectors on condition-specific space
     year: '2022'
   pEx-E2wAAAAJ:Y0pCki6q_DkC:
-    citations: 15
+    citations: 16
     title: Image generation with self pixel-wise normalization
     year: '2023'
   pEx-E2wAAAAJ:YsMSGLbcyi4C:
-    citations: 34
+    citations: 35
     title: 'RORD: A Real-world Object Removal Dataset.'
     year: '2022'
   pEx-E2wAAAAJ:d1gkVwhDpl0C:
-    citations: 193
+    citations: 192
     title: 'Pepsi: Fast image inpainting with parallel decoding network'
     year: '2019'
   pEx-E2wAAAAJ:eQOLeE2rZwMC:
@@ -38,7 +38,7 @@ papers:
     title: Semantic and Instance-Aware Pixel-Adaptive Convolution for Panoptic Segmentation
     year: '2023'
   pEx-E2wAAAAJ:qjMakFHDy7sC:
-    citations: 31
+    citations: 29
     title: Deep fashion recommendation system with style feature decomposition
     year: '2019'
   pEx-E2wAAAAJ:roLk4NBRz8UC:
@@ -46,7 +46,7 @@ papers:
     title: 'VIGFace: Virtual Identity Generation for Privacy-Free Face Recognition Dataset'
     year: '2025'
   pEx-E2wAAAAJ:u-x6o8ySG0sC:
-    citations: 154
+    citations: 150
     title: 'Pepsi++: Fast and lightweight network for image inpainting'
     year: '2020'
   pEx-E2wAAAAJ:u5HHmVD_uO8C:
@@ -54,7 +54,7 @@ papers:
     title: Adversarial context aggregation network for low-light image enhancement
     year: '2018'
   pEx-E2wAAAAJ:ufrVoPGSRksC:
-    citations: 10
+    citations: 9
     title: Multi-view pedestrian occupancy prediction with a novel synthetic dataset
     year: '2025'
   pEx-E2wAAAAJ:zYLM7Y9cAGgC:
