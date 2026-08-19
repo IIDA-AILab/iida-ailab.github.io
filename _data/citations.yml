@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-14'
+  last_updated: '2026-08-19'
 papers:
   pEx-E2wAAAAJ:IjCSPb-OGe4C:
     citations: 7
@@ -42,7 +42,7 @@ papers:
     title: Deep fashion recommendation system with style feature decomposition
     year: '2019'
   pEx-E2wAAAAJ:roLk4NBRz8UC:
-    citations: 7
+    citations: 8
     title: 'VIGFace: Virtual Identity Generation for Privacy-Free Face Recognition Dataset'
     year: '2025'
   pEx-E2wAAAAJ:u-x6o8ySG0sC:
